@@ -49,6 +49,7 @@ Bei __Anmeldeproblemen__ wird Benutzern angeboten eine Fehlermeldung zu senden. 
 In der DigiBib befindet sich ebenfalls eine __Linksammlung (DigiLink)__ und eine __DBIS- / EZB-Integration__. Für die Anzeige der DBIS und EZB der Bibliotheken werden deren jeweilige Schnittstellen angesprochen und die Ergebnisse in der DigiBib gespiegelt. Für DigiLink gibt es eine Administrationsoberfläche, mit der Bibliothekare die Datensätze in der Linkverwaltung verwalten können.
 ### Logfiles
 Um die Funktionsweise eines Systems gewährleisten und nachvollziehen zu können, werden eine ganze Reihe verschiedener __Logfiles__ betrieben. Diese zeichnen wichtige Teile von Funktionen des Systems auf. Zu nennen wäre hier beispielweise verschiedene Logfiles über die Datenverarbeitung in der Metasuche, über Benutzeranmeldungen und interne Programme.
+>_Platzhalter für Beispiel_
 ### Statistiken
 Über DigiBib-Funktionen werden verschiedene __Statistiken__ erhoben. Zum einen gibt es eine Metasuchstatistik, in der erfolgreiche und nicht erfolgreiche Datenbanksuchen aufgezeichnet werden. Zudem gibt es eine Statistik über die Zahl von Benutzeranmeldungen in der DigiBib. Außerdem gibt es Statistiken rund um DigiLink.  
 Man könnte in der Ausweitung der Statistiken eine Verbesserung sehen. Die vorhandenen System-Daten in den Logfiles könnten mehr und spezifischere Statistiken liefern. Interessant wären zum Beispiel Daten über Session-Dauern oder mehr Informationen über die Nutzung elektronischer Medien.
