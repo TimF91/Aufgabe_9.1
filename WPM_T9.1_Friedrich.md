@@ -49,16 +49,15 @@ Bei __Anmeldeproblemen__ wird Benutzern angeboten eine Fehlermeldung zu senden. 
 In der DigiBib befindet sich ebenfalls eine __Linksammlung (DigiLink)__ und eine __DBIS- / EZB-Integration__. Für die Anzeige der DBIS und EZB der Bibliotheken werden deren jeweilige Schnittstellen angesprochen und die Ergebnisse in der DigiBib gespiegelt. Für DigiLink gibt es eine Administrationsoberfläche, mit der Bibliothekare die Datensätze in der Linkverwaltung verwalten können.
 ### Logfiles
 Um die Funktionsweise eines Systems gewährleisten und nachvollziehen zu können, werden eine ganze Reihe verschiedener __Logfiles__ betrieben. Diese zeichnen wichtige Teile von Funktionen des Systems auf. Zu nennen wäre hier beispielweise verschiedene Logfiles über die Datenverarbeitung in der Metasuche, über Benutzeranmeldungen und interne Programme. Zur Illustrierung ist im folgenden ein verfremdetes Beispiel eines Auszugs einer Log-Datei der Benutzeranmelung dargestellt.
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::perform] Got request, starting  
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::perform] User-Id: xxxxxxxxxx  
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::HTTP::make_request] HTTPClient: POST request    -> https://buecherei.stadt.de/E-Medien-Schnittstelle/auth.asp  
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::HTTP::make_request] HTTPClient: Request-Header  -> Content-Type: application/x-www-form-urlencoded  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::perform] Got request, starting  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::perform] User-Id: xxxxxxxxxx  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::HTTP::make_request] HTTPClient: POST request    -> https://buecherei.stadt.de/E-Medien-Schnittstelle/auth.asp  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::HTTP::make_request] HTTPClient: Request-Header  -> Content-Type: application/x-www-form-urlencoded  
 >   
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::HTTP::make_request] HTTPClient: Request-Content -> sno=xxxxxxxxxx&pwd=########  
-> 2020-05-10:10:31:55 <debug> [HBZ::IPS::MultiDBServer::Interface::HTTP::process_request] HTTPClient: Process request  
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::HTTP::process_request] Response status: 200 - OK  
-> 2020-05-10:10:31:55 <debug> [HBZ::IPS::MultiDBServer::Interface::HTTP::process_request] Response:  
-> 200 OK  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::HTTP::make_request] HTTPClient: Request-Content -> sno=xxxxxxxxxx&pwd=########  
+> 2020-05-10:10:31:55 debug [HBZ::IPS::MultiDBServer::Interface::HTTP::process_request] HTTPClient: Process request  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::HTTP::process_request] Response status: 200 - OK  
+> 2020-05-10:10:31:55 debug [HBZ::IPS::MultiDBServer::Interface::HTTP::process_request] Response:  200 OK  
 > Cache-Control: private  
 > Date: Sun, 10 May 2020 10:31:55 GMT  
 > Server: Microsoft-IIS/8.5  
@@ -68,15 +67,15 @@ Um die Funktionsweise eines Systems gewährleisten und nachvollziehen zu können
 > Set-Cookie: ##################; path=/; domain=buecherei.stadt.de; version=1  
 > X-Powered-By: ASP.NET  
 >   
-> <?xml version="1.0" encoding="UTF-8"?>  
-> <response>  
-> <status>-1</status>  
-> <fsk></fsk>  
-> <userid></userid>  
-> <cardid></cardid>  
-> </response>  
+> ?xml version="1.0" encoding="UTF-8"?  
+> response  
+> status -1 /status  
+> fsk /fsk  
+> userid /userid  
+> cardid /cardid  
+> /response  
 >   
-> 2020-05-10:10:31:55 <info> [HBZ::IPS::MultiDBServer::Interface::perform] Return data:  
+> 2020-05-10:10:31:55 info [HBZ::IPS::MultiDBServer::Interface::perform] Return data:  
 > $VAR1 = {  
 >   'ERROR' => {  
 >     'atts' => {  
